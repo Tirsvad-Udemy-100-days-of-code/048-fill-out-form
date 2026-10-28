@@ -28,6 +28,19 @@ The code automates the three steps of the lecture:
 | `docs/` | Project documents, screenshots and the wiki in English, Danish and Bahasa Malaysia |
 | `Doxyfile` | Configuration for the Doxygen API documentation |
 
+### Screenshots of the lecture steps
+
+Taken in a Docker container with headless Chromium.
+
+| Step | Screenshot |
+| --- | --- |
+| 1. Click the link "Content portals" | ![Step 1][img-step-1] |
+| 2. Search for "Python" and press Enter | ![Step 2][img-step-2] |
+| 3. Fill out the form, before Sign Up | ![Step 3, filled][img-step-3-filled] |
+| 3. After Sign Up (the demo page rejects the default example.com address; pass your own with `--email`) | ![Step 3, signed up][img-step-3-signed-up] |
+
+What each step teaches is explained in the wiki: [English][wiki-en], [Dansk][wiki-da], [Bahasa Malaysia][wiki-ms].
+
 ## 📋 Requirements
 
 - Python 3.13 or newer, with `venv` — the language and the isolated environment.
@@ -123,6 +136,7 @@ The documents a newcomer needs, in reading order.
 | [Project Plan][PP-001] | The gateways and their schedule |
 | [Milestones][milestones] | One document per gateway: Go/No-Go criteria and tasks |
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
+| [Wiki pages (docs/wiki)][wiki-dir] | The lecture steps explained, in three languages |
 | [Traceability matrix][TM-001] | How the artifacts link and when each was last reviewed |
 | [Framework README][framework-readme] | The framework this project uses |
 | [Framework changelog][framework-changelog] | What changed in each framework release |
@@ -131,6 +145,13 @@ The documents a newcomer needs, in reading order.
 
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form
 [documentation]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/wiki
+[wiki-en]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/wiki/Home
+[wiki-da]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/wiki/Home-da
+[wiki-ms]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/wiki/Home-ms
+[img-step-1]: ./docs/images/step-1-click-link.png
+[img-step-2]: ./docs/images/step-2-search.png
+[img-step-3-filled]: ./docs/images/step-3-form-filled.png
+[img-step-3-signed-up]: ./docs/images/step-3-form-signed-up.png
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/issues
 [license]: ./LICENSE
 [agents]: ./AGENTS.md
@@ -139,6 +160,7 @@ The documents a newcomer needs, in reading order.
 [PP-001]: ./docs/project-plan.md
 [milestones]: ./docs/milestones/
 [registry]: ./docs/artifact-registry.md
+[wiki-dir]: ./docs/wiki/
 [TM-001]: ./docs/sqa/traceability-matrix.md
 [framework-readme]: ./framework/README.md
 [framework-changelog]: ./framework/CHANGELOG.md

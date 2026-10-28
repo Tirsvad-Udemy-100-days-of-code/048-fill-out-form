@@ -28,7 +28,7 @@ updated whenever an artifact instance is created or reviewed.
 | [PP-001] | PP | en | it | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003] | [RC-003] |
 | [MIL-001] | MIL | en | it | [PP-001] | [MIL-002], [ADR-0001] | [RC-004], [RC-008] (code) |
 | [MIL-002] | MIL | en | it | [MIL-001] | [MIL-003] | [RC-010], [RC-009] (code) |
-| [MIL-003] | MIL | en | it | [MIL-002] | - | [RC-006] |
+| [MIL-003] | MIL | en | it | [MIL-002] | - | [RC-006], [RC-011] (wiki) |
 | [ADR-0001] | ADR | - | - | [BC-001], [MIL-001] | - | [RC-007] |
 
 ## Concern Coverage
@@ -73,3 +73,4 @@ updated whenever an artifact instance is created or reviewed.
 [e1a3d8d]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/e1a3d8d304d4b6ece1a3f95ee02b597e30a97520
 [RC-009]: ./reviews/rc-009-code-mil-002.md
 [RC-010]: ./reviews/rc-010-mil-002-form-automation.md
+[RC-011]: ./reviews/rc-011-wiki.md
