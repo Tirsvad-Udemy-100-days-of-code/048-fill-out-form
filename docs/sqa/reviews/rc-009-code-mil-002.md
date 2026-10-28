@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e764269] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — every Mandatory criterion passes; no blocking finding. Files: src/fill_ou
 
 [MIL-002]: ../../milestones/mil-002-form-automation.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[e764269]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/e764269eda7ccba732556b4c59bd8778483a6991
