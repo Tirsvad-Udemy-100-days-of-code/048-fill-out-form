@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fill-out-form"
+version = "0.1.0"
+description = "Udemy 100 Days of Code, Day 48: automate links, search and a sign-up form with Selenium."
+readme = "README.md"
+requires-python = ">=3.13"
+license = "AGPL-3.0-only"
+license-files = ["LICENSE"]
+authors = [{ name = "Jens Tirsvad Nielsen" }]
+keywords = ["selenium", "udemy", "100-days-of-code", "web-automation"]
+dependencies = [
+    "selenium>=4.25,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "ruff>=0.6",
+    "mypy>=1.11",
+]
+
+[project.scripts]
+fill-out-form = "fill_out_form.presentation.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["e2e: runs a real browser; only inside the Docker container"]
+addopts = "-m 'not e2e'"
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "D"]
+ignore = ["D203", "D213"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D"]
+
+[tool.mypy]
+strict = true
+mypy_path = "src"
