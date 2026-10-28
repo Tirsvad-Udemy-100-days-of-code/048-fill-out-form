@@ -75,7 +75,7 @@ Run the three lecture steps in a visible Chrome window:
 python -m fill_out_form
 ```
 
-Useful options: `--headless` (no window), `--screenshots DIR` (save one picture per step) and `--form-url URL` (use another form page). See `python -m fill_out_form --help`.
+Useful options: `--headless` (no window), `--screenshots DIR` (save one picture per step), `--form-url URL` (use another form page) and `--first-name`, `--last-name`, `--email` (the values typed into the form; the demo page rejects the default `example.com` address, so use your own to see the success page). See `python -m fill_out_form --help`.
 
 Run the steps in Docker (headless, screenshots in `results/`), which never touches your desktop:
 
