@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | pending |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [9565ebe] |
 
 ---
 
@@ -48,3 +48,4 @@ Go — all criteria pass. The translations follow the English text but a native 
 ---
 
 [MIL-003]: ../../milestones/mil-003-documentation.md
+[9565ebe]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/9565ebe66d995894437376af631ad3ebc5cc7a15
