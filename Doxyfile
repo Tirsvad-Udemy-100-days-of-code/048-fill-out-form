@@ -10,8 +10,8 @@ CREATE_SUBDIRS         = NO
 OUTPUT_LANGUAGE        = English
 
 # Python sources
-INPUT                  = src README.md
-FILE_PATTERNS          = *.py *.md
+INPUT                  = src
+FILE_PATTERNS          = *.py
 RECURSIVE              = YES
 EXCLUDE_PATTERNS       = */__pycache__/*
 OPTIMIZE_OUTPUT_JAVA   = YES
@@ -20,7 +20,6 @@ EXTRACT_PRIVATE        = NO
 EXTRACT_STATIC         = YES
 AUTOLINK_SUPPORT       = YES
 MARKDOWN_SUPPORT       = YES
-USE_MDFILE_AS_MAINPAGE = README.md
 PYTHON_DOCSTRING       = YES
 
 # Output formats
@@ -31,7 +30,6 @@ GENERATE_XML           = NO
 
 # Diagrams are not needed and Graphviz is not required
 HAVE_DOT               = NO
-CLASS_DIAGRAMS         = NO
 
 # Messages
 QUIET                  = YES

@@ -11,7 +11,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
+| 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
+| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Go criterion 2 and deliverable: four screenshots, step 3 before and after Sign Up (RC-010) | pending |
 
 ---
 
@@ -21,14 +22,14 @@ Decide whether the three lecture steps (click a link by its text, search and pre
 
 ## Deliverable
 
-Branch `mil-002-form-automation` with the `fill_out_form` package, a runnable entry point, pytest tests, a local form fixture, and one screenshot per lecture step in `docs/images/`, captured in Docker.
+Branch `mil-002-form-automation` with the `fill_out_form` package, a runnable entry point, pytest tests, a local form fixture, and one screenshot per lecture step (four PNG files, step 3 before and after Sign Up) in `docs/images/`, captured in Docker.
 
 ## Go / No-Go Criteria
 
 | # | Criterion (objectively checkable) | Go | No-Go |
 | --- | --- | --- | --- |
 | 1 | `pytest` exits 0 on the host without a browser | Exit 0 | Non-zero |
-| 2 | The Docker end-to-end run exits 0 and writes three screenshots | Exit 0 and three PNG files | Otherwise |
+| 2 | The Docker end-to-end run exits 0 and writes one screenshot per lecture step (step 3 before and after Sign Up) | Exit 0 and four PNG files | Otherwise |
 | 3 | Every selector, URL and text is defined in `constants.py` | No literal selector or URL elsewhere under `src/` | Any found |
 | 4 | Public functions carry Doxygen comments | All public functions | Any missing |
 | 5 | The code review record against `QC-PY-001` is `Go` | Go | No-Go |
