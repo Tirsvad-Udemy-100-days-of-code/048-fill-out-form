@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -15,6 +15,11 @@ keywords = ["selenium", "udemy", "100-days-of-code", "web-automation"]
 dependencies = [
     "selenium>=4.25,<5",
 ]
+
+[project.urls]
+Repository = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form"
+Documentation = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/wiki"
+"Issue tracker" = "https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/issues"
 
 [project.optional-dependencies]
 dev = [
