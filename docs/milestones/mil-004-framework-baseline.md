@@ -12,7 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version; accepted with the Go verdict of the review record (autonomous, not independent) | [90ad973] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added task 6 and criterion 9 (the container of `docker/Dockerfile` runs as a user without root rights, so the OpenGrep scan passes without a suppression); reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added task 6 and criterion 9 (the container of `docker/Dockerfile` runs as a user without root rights, so the OpenGrep scan passes without a suppression); reviewed in autonomous mode, not independent | [087f57a] |
 
 ---
 
@@ -80,3 +80,4 @@ A merged pull request that holds: the updated Business Case, Project Plan, Artif
 [PP-001]: ../project-plan.md
 [MIL-003]: ./mil-003-documentation.md
 [90ad973]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/90ad973aec2f4c57daaa1ec1dbc194932214cce0
+[087f57a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/087f57a2ec5fc058e25a1f37bc26a6d664e437dc

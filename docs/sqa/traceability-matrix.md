@@ -11,7 +11,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
 | 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added MIL-004, the baseline review records RC-012 to RC-015 and the wiki; set the domain of BC-001, PP-001, MIL-004 and the wiki to education; reviewed in autonomous mode, not independent (no QC checklist exists for a traceability matrix) | [90ad973] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the re-review records RC-016 to RC-018 of BC-001, PP-001 and MIL-004 for task 6; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the re-review records RC-016 to RC-018 of BC-001, PP-001 and MIL-004 for task 6; reviewed in autonomous mode, not independent | [087f57a] |
 
 ---
 
@@ -90,3 +90,4 @@ updated whenever an artifact instance is created or reviewed.
 [RC-016]: ./reviews/rc-016-business-case-task-6.md
 [RC-017]: ./reviews/rc-017-project-plan-task-6.md
 [RC-018]: ./reviews/rc-018-milestone-004-task-6.md
+[087f57a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/087f57a2ec5fc058e25a1f37bc26a6d664e437dc

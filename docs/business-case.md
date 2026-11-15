@@ -13,7 +13,7 @@
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
 | 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 7, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-004; set the domain to education; reviewed in autonomous mode, not independent | [90ad973] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral change of `docker/Dockerfile` (a user without root rights) so the OpenGrep scan passes; reviewed in autonomous mode, not independent | pending |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral change of `docker/Dockerfile` (a user without root rights) so the OpenGrep scan passes; reviewed in autonomous mode, not independent | [087f57a] |
 
 ---
 
@@ -152,3 +152,4 @@ Proceed — the scope is small, the risks are mitigated and the outcome is a reu
 [PP-001]: ./project-plan.md
 [MIL-004]: ./milestones/mil-004-framework-baseline.md
 [90ad973]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/90ad973aec2f4c57daaa1ec1dbc194932214cce0
+[087f57a]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/087f57a2ec5fc058e25a1f37bc26a6d664e437dc
