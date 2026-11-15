@@ -4,14 +4,15 @@
 | Key | Value |
 | --- | --- |
 | ID | BC-001 |
-| CrossReference | [SA-001] |
+| CrossReference | [SA-001], [PP-001], [MIL-004] |
 | Language | en |
-| Domain | it |
+| Domain | education |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-10-28 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
+| 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 7, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-004; set the domain to education; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -43,6 +44,7 @@ A clean reference solution for the lecture lets the author keep a tidy portfolio
 3. Deliver a screenshot for each lecture step, shown in the README and the wiki.
 4. Deliver a wiki in English, Danish and Bahasa Malaysia that explains what was gained in each lecture step.
 5. Configure the repository: description, topics, Python `.gitignore`, `pyproject.toml`, Doxyfile, and instructions for a local `.venv`.
+6. Bring the finished project to the common baseline of the framework: the adopted framework release, a wiki sidebar that follows the framework's shape, licence and project URL metadata, a README that lists only the documents of the repository, the editor and environment templates, and review records for every changed document ([MIL-004]).
 
 ## Scope
 
@@ -54,6 +56,7 @@ A clean reference solution for the lecture lets the author keep a tidy portfolio
 - README from the framework template, with run and test instructions and screenshots.
 - Wiki pages in English, Danish and Bahasa Malaysia (`docs/wiki/`), with the same screenshots.
 - Repository description and topics on the git host.
+- The baseline milestone [MIL-004]: the framework release, the wiki sidebar in the framework's shape, the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, review records and the update of the traceability matrix. It changes no behaviour of the program.
 
 ### Out of Scope
 
@@ -61,6 +64,7 @@ A clean reference solution for the lecture lets the author keep a tidy portfolio
 - Later days of the course and the final project.
 - Packaging for PyPI, a graphical front end, and a web service.
 - Reading, testing or importing the personal tokens in `.env`.
+- Any change to `src/` or `tests/` in the baseline milestone [MIL-004]. That milestone opens no live web page, submits no form and runs no browser; the tests use fakes and a local copy of the form.
 
 ## Expected Benefits
 
@@ -90,6 +94,7 @@ The project supports the author's goal of completing the course with a documente
 | 4 | Runtime dependencies | Exactly 1 (selenium) | `dependencies` in `pyproject.toml` |
 | 5 | Repository metadata | Description set and at least 5 topics | Git host API response |
 | 6 | Quality gate | Every document and the code have an `RC-*` with verdict Go | `docs/sqa/reviews/` |
+| 7 | The baseline milestone is done (objective 6) | The wiki sidebar has the framework's shape, `framework/scripts/check-readme.sh`, `check-languages.sh` and `check-editorconfig.sh` exit with code 0, `python -m pytest` passes, 100 % of the continuous integration (CI) checks of the pull request of [MIL-004] pass | Files in `docs/`, the script exit codes and the pull request status on the git host |
 
 ## Risks
 
@@ -100,6 +105,7 @@ The project supports the author's goal of completing the course with a documente
 | Wikipedia changes its page layout | Selectors break | Selectors live in `constants.py`; screenshots record the state on the capture date |
 | Danish or Bahasa Malaysia text contains errors | Misleading text | English is authoritative; translations follow page by page; the author can correct them |
 | Tokens in `.env` leak | Account compromise | `.env` is in `.gitignore` and is never read by project code or tests |
+| The documents of the baseline milestone [MIL-004] change documents that were accepted earlier, and the AI stand-in for S01 reviews them | A defect is missed because the review is not independent | Every review record of the baseline says `Mode: autonomous, not independent`, `src/` and `tests/` are not changed, the tests run before and after, and the end-of-run summary lists the reviews for challenge |
 
 ## Assumptions
 
@@ -111,10 +117,11 @@ The project supports the author's goal of completing the course with a documente
 ## Constraints
 
 - Duration: one week, 2026-10-28 to 2026-11-04.
+- The baseline milestone [MIL-004] starts 2026-11-16 and is finished within one week, by 2026-11-23. For that milestone only, an AI stand-in for S01 reviews and accepts the changed documents.
 - Python 3.13 or newer, `venv`, `pytest`, `pyproject.toml`.
 - Folder structure `src/`, `tests/`, `docs/`.
 - Only runtime dependency: selenium.
-- Product Owner domain: IT; language: English.
+- The Product Owner (PO) language is English and the PO domain is education (it was IT until [MIL-004]; the documents that [MIL-004] does not change keep the domain `it`, see the Open Issues of [PP-001]).
 
 ## Cost–Benefit Assessment
 
@@ -141,3 +148,5 @@ Proceed — the scope is small, the risks are mitigated and the outcome is a reu
 
 [SA-001]: ./stakeholder-analysis.md
 [e1a3d8d]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/e1a3d8d304d4b6ece1a3f95ee02b597e30a97520
+[PP-001]: ./project-plan.md
+[MIL-004]: ./milestones/mil-004-framework-baseline.md

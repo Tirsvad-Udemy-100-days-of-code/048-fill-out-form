@@ -27,6 +27,9 @@ The code automates the three steps of the lecture:
 | `tests/` | pytest tests (`unit/`), the browser run (`e2e/`) and a local copy of the form (`fixtures/`) |
 | `docs/` | Project documents, screenshots and the wiki in English, Danish and Bahasa Malaysia |
 | `Doxyfile` | Configuration for the Doxygen API documentation |
+| `framework/` | The SQA and QC framework (a git submodule) that the project documents follow |
+| `.editorconfig` | The editor settings of the framework baseline |
+| `.env.example` | Placeholders for the git host tokens that the framework scripts read, and the optional settings of the program (it reads none from a `.env` file) |
 
 ### Screenshots of the lecture steps
 
@@ -90,6 +93,8 @@ python -m fill_out_form
 
 Useful options: `--headless` (no window), `--screenshots DIR` (save one picture per step), `--form-url URL` (use another form page) and `--first-name`, `--last-name`, `--email` (the values typed into the form; the demo page rejects the default `example.com` address, so use your own to see the success page). See `python -m fill_out_form --help`.
 
+The program opens real pages (the Wikipedia main page and the course's demo sign-up form) and clicks the sign-up button with the values you give. Read the terms of a site before you run the program against it and use your own address, not another person's data.
+
 Run the steps in Docker (headless, screenshots in `results/`), which never touches your desktop:
 
 ```bash
@@ -116,7 +121,7 @@ doxygen Doxyfile
 
 ## 📄 License
 
-GNU Affero General Public License v3.0, see [LICENSE][license].
+The project is licensed under the GNU Affero General Public License v3.0 (AGPL-3.0-only); see the [LICENSE][license] file.
 
 ## 🔗 Links
 
@@ -130,7 +135,6 @@ The documents a newcomer needs, in reading order.
 
 | Document | What it tells you |
 | --- | --- |
-| [AGENTS.md][agents] | The rules AI agents follow in this repository |
 | [Business Case][BC-001] | Why the project exists, its scope and success criteria |
 | [Stakeholder Analysis][SA-001] | Who is involved; the stakeholder IDs used for owners and reviewers |
 | [Project Plan][PP-001] | The gateways and their schedule |
@@ -138,8 +142,6 @@ The documents a newcomer needs, in reading order.
 | [Artifact registry][registry] | Where each artifact type lives, the next version, the PO language and domain |
 | [Wiki pages (docs/wiki)][wiki-dir] | The lecture steps explained, in three languages |
 | [Traceability matrix][TM-001] | How the artifacts link and when each was last reviewed |
-| [Framework README][framework-readme] | The framework this project uses |
-| [Framework changelog][framework-changelog] | What changed in each framework release |
 
 ---
 
@@ -154,7 +156,6 @@ The documents a newcomer needs, in reading order.
 [img-step-3-signed-up]: ./docs/images/step-3-form-signed-up.png
 [issues]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/issues
 [license]: ./LICENSE
-[agents]: ./AGENTS.md
 [BC-001]: ./docs/business-case.md
 [SA-001]: ./docs/stakeholder-analysis.md
 [PP-001]: ./docs/project-plan.md
@@ -162,5 +163,3 @@ The documents a newcomer needs, in reading order.
 [registry]: ./docs/artifact-registry.md
 [wiki-dir]: ./docs/wiki/
 [TM-001]: ./docs/sqa/traceability-matrix.md
-[framework-readme]: ./framework/README.md
-[framework-changelog]: ./framework/CHANGELOG.md
