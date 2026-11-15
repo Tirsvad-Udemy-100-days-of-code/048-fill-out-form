@@ -105,6 +105,8 @@ docker build -t fill-out-form -f docker/Dockerfile .
 docker run --rm -v "$(pwd)/results:/results" fill-out-form
 ```
 
+The container runs as a user with the id 1000. On Linux the `results/` folder must be writable by that id.
+
 ## 🧪 Tests
 
 The unit tests need no browser and no network:

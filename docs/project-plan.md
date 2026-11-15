@@ -12,7 +12,8 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-004 with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain and the live-site rule in the Planning Assumptions and Open Issues; corrected the open issue about the traceability matrix; set the domain to education; reviewed in autonomous mode, not independent | [90ad973] |
+| 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the baseline gateway MIL-004 with its schedule row, scope coverage, dependency, risk and Gantt entries; recorded the move of the end date, the domain and the live-site rule in the Planning Assumptions and Open Issues; corrected the open issue about the traceability matrix; set the domain to education; reviewed in autonomous mode, not independent | [90ad973] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the user set-up of `docker/Dockerfile` to the main deliverable of MIL-004; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -35,7 +36,7 @@ This plan schedules three gateways that deliver the Day 48 Selenium form project
 | Project setup | [MIL-001] | 2026-10-28 to 2026-10-29 | 2026-10-29 | S01 | none (technical tasks) | Configured repository, skeleton, README, ADR | [M-282] |
 | Form automation | [MIL-002] | 2026-10-30 to 2026-11-01 | 2026-11-01 | S01 | none (technical tasks) | Code, tests and screenshots for the three lecture steps | [M-283] |
 | Documentation and wiki | [MIL-003] | 2026-11-02 to 2026-11-04 | 2026-11-04 | S01 | none (technical tasks) | README with screenshots and a three-language wiki | [M-284] |
-| Framework baseline | [MIL-004] | 2026-11-16 to 2026-11-23 | 2026-11-23 | S01 | none (technical tasks) | Branch `mil-004-framework-baseline` merged: the adopted framework release, the wiki sidebar in the framework's shape, the README, licence and project URL metadata, review records and the traceability matrix | [M-563] |
+| Framework baseline | [MIL-004] | 2026-11-16 to 2026-11-23 | 2026-11-23 | S01 | none (technical tasks) | Branch `mil-004-framework-baseline` merged: the adopted framework release, the wiki sidebar in the framework's shape, the README, licence and project URL metadata, review records, the traceability matrix and a container user without root rights | [M-563] |
 
 ```plantuml
 @startgantt

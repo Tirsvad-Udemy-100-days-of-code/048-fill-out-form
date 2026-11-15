@@ -12,7 +12,8 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 7, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-004; set the domain to education; reviewed in autonomous mode, not independent | [90ad973] |
+| 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added objective 6, success criterion 7, a scope item, an out-of-scope item, a risk and constraints for the baseline milestone MIL-004; set the domain to education; reviewed in autonomous mode, not independent | [90ad973] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Scope wording: the baseline milestone includes one behaviour-neutral change of `docker/Dockerfile` (a user without root rights) so the OpenGrep scan passes; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -56,7 +57,7 @@ A clean reference solution for the lecture lets the author keep a tidy portfolio
 - README from the framework template, with run and test instructions and screenshots.
 - Wiki pages in English, Danish and Bahasa Malaysia (`docs/wiki/`), with the same screenshots.
 - Repository description and topics on the git host.
-- The baseline milestone [MIL-004]: the framework release, the wiki sidebar in the framework's shape, the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, review records and the update of the traceability matrix. It changes no behaviour of the program.
+- The baseline milestone [MIL-004]: the framework release, the wiki sidebar in the framework's shape, the README without the private framework files in its appendix, licence and project URL metadata, `.editorconfig`, `.env.example`, review records and the update of the traceability matrix. It changes no behaviour of the program; its only other change is one `USER` line with its user set-up in `docker/Dockerfile` so the OpenGrep scan passes (task 6).
 
 ### Out of Scope
 
@@ -64,7 +65,7 @@ A clean reference solution for the lecture lets the author keep a tidy portfolio
 - Later days of the course and the final project.
 - Packaging for PyPI, a graphical front end, and a web service.
 - Reading, testing or importing the personal tokens in `.env`.
-- Any change to `src/` or `tests/` in the baseline milestone [MIL-004]. That milestone opens no live web page, submits no form and runs no browser; the tests use fakes and a local copy of the form.
+- Any change to `src/` or `tests/` in the baseline milestone [MIL-004]; its only change of a runtime file is the user set-up in `docker/Dockerfile` (task 6). That milestone opens no live web page, submits no form and runs no browser; the tests use fakes and a local copy of the form.
 
 ## Expected Benefits
 

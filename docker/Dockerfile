@@ -17,5 +17,11 @@ COPY tests ./tests
 RUN python -m pip install --upgrade pip \
     && python -m pip install ".[dev]"
 
+# Run as a user without root rights; it owns /results, the folder for the screenshots.
+RUN useradd --create-home --uid 1000 app \
+    && mkdir -p /results \
+    && chown app /results
+USER app
+
 VOLUME ["/results"]
 CMD ["python", "-m", "fill_out_form", "--headless", "--screenshots", "/results"]

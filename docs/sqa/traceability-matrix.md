@@ -4,13 +4,14 @@
 | Key | Value |
 | --- | --- |
 | ID | TM-001 |
-| CrossReference | [BC-001], [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [ADR-0001], [RC-001], [RC-002], [RC-003], [RC-004], [RC-005], [RC-006], [RC-007], [RC-008], [RC-009], [RC-010], [RC-011], [RC-012], [RC-013], [RC-014], [RC-015] |
+| CrossReference | [BC-001], [SA-001], [PP-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004], [ADR-0001], [RC-001], [RC-002], [RC-003], [RC-004], [RC-005], [RC-006], [RC-007], [RC-008], [RC-009], [RC-010], [RC-011], [RC-012], [RC-013], [RC-014], [RC-015], [RC-016], [RC-017], [RC-018] |
 
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-10-28 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Initial version | [e1a3d8d] |
-| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added MIL-004, the baseline review records RC-012 to RC-015 and the wiki; set the domain of BC-001, PP-001, MIL-004 and the wiki to education; reviewed in autonomous mode, not independent (no QC checklist exists for a traceability matrix) | [90ad973] |
+| 2026-11-16 | Deprecated | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added MIL-004, the baseline review records RC-012 to RC-015 and the wiki; set the domain of BC-001, PP-001, MIL-004 and the wiki to education; reviewed in autonomous mode, not independent (no QC checklist exists for a traceability matrix) | [90ad973] |
+| 2026-11-16 | Accepted | Jens Tirsvad Nielsen | AI as stand-in for S01 | Added the re-review records RC-016 to RC-018 of BC-001, PP-001 and MIL-004 for task 6; reviewed in autonomous mode, not independent | pending |
 
 ---
 
@@ -24,13 +25,13 @@ updated whenever an artifact instance is created or reviewed.
 
 | Artifact Instance | Type | Language | Domain | Upstream (Backward Link) | Downstream (Forward Link) | Last Reviewed (RC-ID) |
 | --- | --- | --- | --- | --- | --- | --- |
-| [BC-001] | BC | en | education | - | [SA-001], [PP-001], [MIL-004] | [RC-012], [RC-001] |
+| [BC-001] | BC | en | education | - | [SA-001], [PP-001], [MIL-004] | [RC-016] (Go, re-review after task 6), [RC-012], [RC-001] |
 | [SA-001] | SA | en | it | [BC-001] | [PP-001] | [RC-002] |
-| [PP-001] | PP | en | education | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003], [MIL-004] | [RC-013], [RC-003] |
+| [PP-001] | PP | en | education | [BC-001], [SA-001] | [MIL-001], [MIL-002], [MIL-003], [MIL-004] | [RC-017] (Go, re-review after task 6), [RC-013], [RC-003] |
 | [MIL-001] | MIL | en | it | [PP-001] | [MIL-002], [ADR-0001] | [RC-004], [RC-008] (code) |
 | [MIL-002] | MIL | en | it | [MIL-001] | [MIL-003] | [RC-010], [RC-009] (code) |
 | [MIL-003] | MIL | en | it | [MIL-002] | [MIL-004] | [RC-006], [RC-011] (wiki) |
-| [MIL-004] | MIL | en | education | [BC-001], [PP-001], [MIL-003] | - | [RC-014] |
+| [MIL-004] | MIL | en | education | [BC-001], [PP-001], [MIL-003] | - | [RC-018] (Go, re-review after task 6), [RC-014] |
 | [ADR-0001] | ADR | - | - | [BC-001], [MIL-001] | - | [RC-007] |
 | Wiki | Wiki | en, da, ms | education | [BC-001], [MIL-004] | - | [RC-015], [RC-011] |
 
@@ -57,7 +58,7 @@ updated whenever an artifact instance is created or reviewed.
 - `-` in Upstream means foundational; in Downstream it means nothing is built on it yet.
 - The domain of [BC-001], [PP-001], [MIL-004] and the wiki is `education` since [MIL-004]. The other documents keep the domain `it` they were accepted with; a change of their domain would need a new review of each (see the Open Issues of [PP-001]).
 - The wiki (`docs/wiki/`) is documentation, not an artifact with an ID or a Language and Domain row; it has its own review records, [RC-015] for the sidebar and the page sets and [RC-011] for its content.
-- [MIL-004] changes no source or test file.
+- [MIL-004] changes no source or test file; its task 6 changes `docker/Dockerfile` only (a user without root rights), checked by the OpenGrep scan.
 
 ---
 
@@ -86,3 +87,6 @@ updated whenever an artifact instance is created or reviewed.
 [RC-014]: ./reviews/rc-014-milestone-004.md
 [RC-015]: ./reviews/rc-015-wiki-baseline.md
 [90ad973]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/048-fill-out-form/commit/90ad973aec2f4c57daaa1ec1dbc194932214cce0
+[RC-016]: ./reviews/rc-016-business-case-task-6.md
+[RC-017]: ./reviews/rc-017-project-plan-task-6.md
+[RC-018]: ./reviews/rc-018-milestone-004-task-6.md
